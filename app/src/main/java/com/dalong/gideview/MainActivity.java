@@ -188,6 +188,21 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     @Override
     public void onPageSelected(int position) {
 
+        switch (position){
+            case 0:
+                gideFragment1.startAnim();
+                break;
+            case 1:
+                gideFragment2.startAnim();
+                break;
+            case 2:
+                gideFragment3.startAnim();
+                break;
+            case 3:
+                gideFragment4.startAnim();
+                break;
+        }
+
     }
 
     /**

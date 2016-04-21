@@ -4,10 +4,20 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/picture4_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/meinv4"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
     <TextView
-        android:text="Gide4"
-        android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:text="我长得漂亮吗"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/meinv4_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

@@ -35,4 +35,26 @@
         android:id="@+id/gide_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="注册"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/regist_selector"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="登录"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/login_selector"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>

@@ -6,4 +6,9 @@
     <color name="gide_bg">#e7eaf1</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="color_regist">#e098b760</color>
+    <color name="color_regist_pressed">#e0708a3c</color>
+    <color name="color_login">#e0298CCC</color>
+    <color name="color_login_pressed">#e02E97DE</color>
 </resources>
