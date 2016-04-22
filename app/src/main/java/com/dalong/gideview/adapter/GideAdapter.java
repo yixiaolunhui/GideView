@@ -1,4 +1,4 @@
-package com.dalong.gideview;
+package com.dalong.gideview.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

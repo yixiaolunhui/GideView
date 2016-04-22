@@ -10,6 +10,13 @@ import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
+import com.dalong.gideview.Indicator.CircleIndicator;
+import com.dalong.gideview.adapter.GideAdapter;
+import com.dalong.gideview.fragments.GideFragment;
+import com.dalong.gideview.fragments.GideFragment2;
+import com.dalong.gideview.fragments.GideFragment3;
+import com.dalong.gideview.fragments.GideFragment4;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private float mPreviousAlpha = 0;
     private float mNextAlpha = 0;
     private float mCurrentAlpha = 0;
+    private CircleIndicator mIndicator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         mGideAdapter=new GideAdapter(getSupportFragmentManager(),mFragments);
         mViewpager.setAdapter(mGideAdapter);
         mViewpager.setOnPageChangeListener(this);
+
+        mIndicator.setViewPager(mViewpager);
     }
 
     /**
@@ -72,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         mPicture3=(ImageView)findViewById(R.id.picture3);
         mPicture4=(ImageView)findViewById(R.id.picture4);
         mViewpager=(ViewPager)findViewById(R.id.gide_viewpager);
+        mIndicator=(CircleIndicator)findViewById(R.id.guide_indicator);
 
 
         /**

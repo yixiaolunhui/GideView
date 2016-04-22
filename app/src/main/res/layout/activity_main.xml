@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
     android:background="@color/gide_bg"
     tools:context="com.dalong.gideview.MainActivity">
 
@@ -36,7 +37,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+
+    <com.dalong.gideview.Indicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/guide_indicator"
+        CircleIndicator:ci_background="@android:color/white"
+        CircleIndicator:ci_selected_background="0xffe6454a"
+        CircleIndicator:ci_mode="solo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        CircleIndicator:ci_gravity="center"
+        CircleIndicator:ci_radius="5dp"
+        CircleIndicator:ci_margin="5dp" />
+
+
     <LinearLayout
+        android:id="@+id/bottom_view"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
